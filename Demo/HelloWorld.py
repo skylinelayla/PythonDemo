@@ -38,6 +38,23 @@ print(S[1:3])#分片1到2
 print(S[1:])
 print(S[:])
 #Python 不可以直接改变变量值，但可以重新创建一个相同名称的变量然后赋值
+S='z'+S[1:]
+print(S)
+q=S.find('ps')
+print(q)
+S.replace('pa','XYZ')#但不会改变原来的变量
+
+line='aaa,bbb,ccc,dd'
+print(line.split(','))
+print(S.upper())
+
+print('%s,eggs,and %s'%('spam','SPAM!'))
+print('{0},eggs,and {1}'.format('spam','SPAM!'))#高级格式化
+
+
+
+
+
 
 
 
