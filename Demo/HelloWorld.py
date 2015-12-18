@@ -94,6 +94,18 @@ print(res['job'][0])
 print(res['job'].append('janitor'))
 print(res)
 
+D={'a':1,'b':2,'c':3}
+print(D)
+#字典的排序
+Ks=list(D.keys())
+print(Ks)
+Ks.sort()
+print(Ks)
+for key in Ks:
+    print(key,'=>',D[key])
+
+for key in sorted(D):
+    print(key,'=>',D[key])
 
 
 
