@@ -107,6 +107,36 @@ for key in Ks:
 for key in sorted(D):
     print(key,'=>',D[key])
 
+for c in 'spam':
+    print(c.upper())
+
+x=4
+while x>0:
+    print('spam!'*x)
+    x-=1
+
+#元组相当于一个不可以改变的列表
+T=(1,2,34)
+print(len(T))
+T+=(5,6)
+print(T)
+print(T.count(4))#元素4出现的次数
 
 
+#文件操作--创建一个文件然后写入
+f=open('data.txt','w')
+f.write('Hello\n')
+
+w=open('data.txt')
+text=w.readline()
+print(text)#读不出来？？？
+
+#集合类型
+X=set('spam')
+Y={'h','a','m'}
+print(X,Y)
+print(X&Y)
+print(X|Y)
+print(X-Y)
+print({k**2 for k in [1,2,3,4]})
 
