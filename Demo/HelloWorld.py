@@ -140,3 +140,22 @@ print(X|Y)
 print(X-Y)
 print({k**2 for k in [1,2,3,4]})
 
+#定义类
+class Worker:
+    def __init__(self,name,pay):#初始化了两个属性name和pay
+        self.name=name
+        self.pay=pay
+    def lastName(self):
+        return self.name.split()[-1]
+    def giveRaise(self,percent):
+        self.pay*=(1+percent)
+
+bob=Worker('Bob Smith',50000)
+sue=Worker('Sue Jones',60000)
+print(bob.lastName())
+print(sue.lastName())
+sue.giveRaise(.10)
+print(sue.pay)
+
+
+
